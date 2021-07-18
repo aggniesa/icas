@@ -73,10 +73,10 @@ body {
         color: #868b8e;
         font-family: "Rajdhani", sans-serif;
         padding: 25px; }
-    body .main-container .main-video {
+    body .main-container .main-img {
       display: flex;
       justify-content: center; }
-      body .main-container .main-video video {
+      body .main-container .main-img img {
         height: 90vh; }
   body .btn {
     background-color: #e7d2cc;
