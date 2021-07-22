@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-@mixin propFuente ( $fontSize , $fontWeight) {
+@mixin propFuente($fontSize, $fontWeight) {
   color: #868b8e;
   font-size: $fontSize;
   font-weight: $fontWeight;
@@ -10,51 +10,37 @@
 $colorDetails: #e7d2cc;
 $fontFamily: "Rajdhani", sans-serif;
 body {
-  background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
+  background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%)
+    #989898;
   .navbar-brand {
-    @include propFuente (1.5rem , bolder);
+    @include propFuente(1.5rem, bolder);
     color: $colorDetails;
     font-family: $fontFamily;
     border: #ffffff66;
-    & :hover {
-      color: white;
-    }
   }
   .menu {
-    @include propFuente (1.5rem , bold);
-    background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
+    @include propFuente(1.5rem, bold);
+    background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%)
+      #989898;
     padding: 10px;
     border: $colorDetails;
     border-style: solid;
     border-width: 3px;
     text-align: center;
     justify-content: space-between;
-    ul {
-      color: $colorDetails;
-      display: flex;
-      list-style: none;
-      justify-content: space-evenly;
-      li {
-        a {
-          color: $colorDetails;
-          text-decoration: none;
-          margin: 0px 10px;
-          &:hover {
-            color: white;
-          }
-        }
-      }
+    .navbar-log {
+      width: 68px;
     }
     .navbar-collapse {
-      flex-grow: unset !important;
-      width: 100%;
-      display: flex;
-      justify-content: center;
+      flex-grow: initial;
       font-family: $fontFamily;
       font-weight: bold;
       .nav-link {
         color: $colorDetails !important;
         margin: 0px 30px;
+      }
+      .nav-link:hover {
+        color: white !important;
       }
     }
   }
@@ -67,8 +53,8 @@ body {
     display: block;
   }
   .main-container {
-    margin-top: 78px;
-    background-color: rgb(231, 228, 228);
+    margin-top: 100px;
+    background-color: #e7e4e4;
     .main-title {
       @extend .index__title;
       font-weight: bold;
@@ -93,11 +79,11 @@ body {
   }
   .btn {
     background-color: $colorDetails;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
   /* Blog */
-  main {
-    margin-top: 75px;
+  .blog__main {
+    margin-top: 100px;
     .blog__section {
       display: flex;
       justify-content: space-around;
@@ -130,26 +116,20 @@ body {
   }
   /* Galería */
   .tituloGaleria {
-    margin-top: 85px;
+    margin-top: 100px;
     @extend .index__title;
     color: $colorDetails;
-    display: flex;
-    justify-content: space-around;
-    background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
-    
+    text-align: center;
+    background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%)
+      #989898;
   }
   .carousel {
-    margin-top: 52px;
     .carousel-inner {
       height: 90vh;
     }
   }
   /* Tienda*/
-  .card__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+
   .card-body {
     display: flex;
     flex-direction: column;
@@ -181,6 +161,32 @@ body {
     }
   }
 }
+/*footer*/
+
+.footer {
+  background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%)
+    #989898;
+  padding: 10px;
+  border: $colorDetails;
+  border-style: solid;
+  border-width: 3px;
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  ul li {
+    list-style: none;
+    margin: 0px 20px;
+    font-size: 30px;
+  }
+  ul li i {
+    color: $colorDetails;
+  }
+  ul li i:hover {
+    color: white;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .mainTienda {
     display: grid;

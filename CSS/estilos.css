@@ -17,8 +17,6 @@ body {
     color: #e7d2cc;
     font-family: "Rajdhani", sans-serif;
     border: #ffffff66; }
-    body .navbar-brand :hover {
-      color: white; }
   body .menu {
     color: #868b8e;
     font-size: 1.5rem;
@@ -30,27 +28,17 @@ body {
     border-width: 3px;
     text-align: center;
     justify-content: space-between; }
-    body .menu ul {
-      color: #e7d2cc;
-      display: flex;
-      list-style: none;
-      justify-content: space-evenly; }
-      body .menu ul li a {
-        color: #e7d2cc;
-        text-decoration: none;
-        margin: 0px 10px; }
-        body .menu ul li a:hover {
-          color: white; }
+    body .menu .navbar-log {
+      width: 68px; }
     body .menu .navbar-collapse {
-      flex-grow: unset !important;
-      width: 100%;
-      display: flex;
-      justify-content: center;
+      flex-grow: initial;
       font-family: "Rajdhani", sans-serif;
       font-weight: bold; }
       body .menu .navbar-collapse .nav-link {
         color: #e7d2cc !important;
         margin: 0px 30px; }
+      body .menu .navbar-collapse .nav-link:hover {
+        color: white !important; }
   body .index__title, body .main-container .main-title, body .tituloGaleria {
     color: rgba(165, 168, 112, 0.904);
     font-family: "Rajdhani", sans-serif;
@@ -58,7 +46,7 @@ body {
     text-transform: uppercase;
     display: block; }
   body .main-container {
-    margin-top: 78px;
+    margin-top: 100px;
     background-color: #e7e4e4; }
     body .main-container .main-title {
       font-weight: bold;
@@ -81,44 +69,37 @@ body {
   body .btn {
     background-color: #e7d2cc;
     margin-bottom: 20px; }
-  body main {
-    margin-top: 75px; }
-    body main .blog__section {
+  body .blog__main {
+    margin-top: 100px; }
+    body .blog__main .blog__section {
       display: flex;
       justify-content: space-around;
       background-color: #e7e4e4; }
-      body main .blog__section .blog__section--title {
+      body .blog__main .blog__section .blog__section--title {
         text-align: center; }
-        body main .blog__section .blog__section--title h2 {
+        body .blog__main .blog__section .blog__section--title h2 {
           color: #868b8e;
           font-family: "Rajdhani", sans-serif;
           text-transform: capitalize;
           padding: 25px; }
-      body main .blog__section .imageContainer {
+      body .blog__main .blog__section .imageContainer {
         display: flex;
         justify-content: space-around; }
-        body main .blog__section .imageContainer .blog__section--image {
+        body .blog__main .blog__section .imageContainer .blog__section--image {
           width: 80%;
           height: 80vh; }
-      body main .blog__section .paragraphContainer {
+      body .blog__main .blog__section .paragraphContainer {
         display: flex;
         align-items: center; }
-        body main .blog__section .paragraphContainer .blog__section--paragraph {
+        body .blog__main .blog__section .paragraphContainer .blog__section--paragraph {
           width: 80%; }
   body .tituloGaleria {
-    margin-top: 85px;
+    margin-top: 100px;
     color: #e7d2cc;
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
     background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898; }
-  body .carousel {
-    margin-top: 52px; }
-    body .carousel .carousel-inner {
-      height: 90vh; }
-  body .card__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+  body .carousel .carousel-inner {
+    height: 90vh; }
   body .card-body {
     display: flex;
     flex-direction: column; }
@@ -140,6 +121,25 @@ body {
         background-color: #e7d2cc;
         width: 100%;
         margin-top: 5px; }
+
+/*footer*/
+.footer {
+  background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
+  padding: 10px;
+  border: #e7d2cc;
+  border-style: solid;
+  border-width: 3px; }
+  .footer ul {
+    display: flex;
+    justify-content: center; }
+  .footer ul li {
+    list-style: none;
+    margin: 0px 20px;
+    font-size: 30px; }
+  .footer ul li i {
+    color: #e7d2cc; }
+  .footer ul li i:hover {
+    color: white; }
 
 @media only screen and (max-width: 768px) {
   .mainTienda {
