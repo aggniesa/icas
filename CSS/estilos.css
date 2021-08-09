@@ -10,14 +10,14 @@ body {
   /* Tienda*/
   /* Formulario */ }
   body .navbar-brand {
-    color: #696b6d;
+    color: #5d5e5f;
     font-size: 1.5rem;
     font-weight: bolder;
     color: #e7d2cc;
     font-family: "Rajdhani", sans-serif;
     border: #ffffff66; }
   body .menu {
-    color: #696b6d;
+    color: #5d5e5f;
     font-size: 1.5rem;
     font-weight: bold;
     background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
@@ -39,7 +39,7 @@ body {
       body .menu .navbar-collapse .nav-link:hover {
         color: white !important; }
   body .banner {
-    background-image: url(../Media/banner2.png);
+    background-image: url(../Media/bannerfoto.png);
     background-size: cover;
     height: 50vh;
     width: 100%;
@@ -49,50 +49,69 @@ body {
     align-items: center;
     margin-top: 90px; }
     body .banner h1 {
-      padding: 50px 60px 50px 60px;
-      font-size: 35px;
+      padding: 3px 20px 3px 20px;
+      font-size: 3rem;
       font-family: "Rajdhani", sans-serif;
-      color: #696b6d; }
+      color: #5d5e5f;
+      background-color: white;
+      margin-bottom: 30px; }
     body .banner .parrafoIndex {
       font-family: "Rajdhani", sans-serif;
       font-size: 25px;
-      color: #696b6d; }
+      color: #5d5e5f;
+      width: 60vw;
+      text-align: center;
+      background-color: white; }
   body .index__title, body .main-container .main-title, body .tituloGaleria {
-    color: #696b6d;
+    color: #5d5e5f;
     font-family: "Rajdhani", sans-serif;
     font-size: 40px;
     display: block;
     padding: 20px; }
   body .main-container {
-    background-color: #e7e4e4; }
+    background-color: #eee7e7;
+    padding-top: 50px;
+    padding-bottom: 50px; }
     body .main-container .main-title {
+      padding-left: 50px;
       font-weight: bold;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around; }
       body .main-container .main-title p {
-        color: #696b6d;
+        color: #5d5e5f;
         font-size: 18px;
         font-weight: 500;
-        color: #868b8e;
+        color: #5d5e5f;
         font-family: "Rajdhani", sans-serif;
         padding: 25px; }
     body .main-container .main-img {
       display: flex;
       justify-content: center; }
       body .main-container .main-img img {
-        height: 90vh; }
+        height: 70vh;
+        padding: 10px;
+        margin-top: 30px; }
   body .btn {
     background-color: #e7d2cc;
     margin-bottom: 20px; }
   body .index__card--container {
-    background-color: radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
-    display: flex; }
+    background-color: #eee7e7;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 50px; }
+    body .index__card--container .row {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 40px;
+      margin-bottom: 40px; }
     body .index__card--container .cardIndex {
       justify-content: space-around;
-      margin-top: 5px;
-      margin-bottom: 5px; }
+      margin: 5px; }
       body .index__card--container .cardIndex .card-body {
         display: flex;
         flex-direction: column; }
@@ -105,7 +124,7 @@ body {
     body .blog__main .blog__section .blog__section--title {
       text-align: center; }
       body .blog__main .blog__section .blog__section--title h3 {
-        color: #696b6d;
+        color: #5d5e5f;
         font-family: "Rajdhani", sans-serif;
         text-transform: capitalize;
         padding: 25px; }
@@ -119,7 +138,7 @@ body {
       display: flex;
       align-items: center; }
       body .blog__main .blog__section .paragraphContainer .blog__section--paragraph {
-        color: #696b6d;
+        color: #5d5e5f;
         font-size: 17px;
         font-weight: normal;
         width: 80%;
