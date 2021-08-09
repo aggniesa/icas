@@ -3,15 +3,15 @@
   padding: 0;
 }
 @mixin propFuente($fontSize, $fontWeight) {
-  color: #868b8e;
+  color: #696b6d;
   font-size: $fontSize;
   font-weight: $fontWeight;
 }
 $colorDetails: #e7d2cc;
 $fontFamily: "Rajdhani", sans-serif;
+$backgroudGradient: radial-gradient(at top center, #ffffff66 0%, #00000066 120%)
+#989898;
 body {
-  background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%)
-    #989898;
   .navbar-brand {
     @include propFuente(1.5rem, bolder);
     color: $colorDetails;
@@ -20,8 +20,7 @@ body {
   }
   .menu {
     @include propFuente(1.5rem, bold);
-    background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%)
-      #989898;
+    background: $backgroudGradient;
     padding: 10px;
     border: $colorDetails;
     border-style: solid;
@@ -45,15 +44,35 @@ body {
     }
   }
   /* Index*/
-  .index__title {
-    color: rgba(165, 168, 112, 0.904);
+    .banner {
+      background-image: url(../Media/banner.png);
+      height: 50vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 90px;
+      h1 {
+        padding: 50px 60px 50px 60px;
+        font-size: 35px;
+        font-family: $fontFamily;
+        color:#696b6d;
+      }
+      .parrafoIndex {
+        font-family: $fontFamily;
+        font-size: 25px;
+        color: #696b6d;
+      }
+    }
+    .index__title {
+    color: #696b6d;
     font-family: $fontFamily;
-    font-size: 30px;
-    text-transform: uppercase;
+    font-size: 40px;
     display: block;
+    padding: 20px;
   }
   .main-container {
-    margin-top: 100px;
     background-color: #e7e4e4;
     .main-title {
       @extend .index__title;
@@ -81,17 +100,34 @@ body {
     background-color: $colorDetails;
     margin-bottom: 20px;
   }
+  .index__card--container {
+    background-color: $backgroudGradient;
+    .cardIndex {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      .card-body {
+      display: flex;
+      flex-direction: column;
+      }
+      .card-title {
+        text-align: center;
+      }
+    }
+  }
+  
+ 
   /* Blog */
   .blog__main {
-    margin-top: 100px;
     .blog__section {
       display: flex;
       justify-content: space-around;
       background-color: rgb(231, 228, 228);
       .blog__section--title {
         text-align: center;
-        h2 {
-          color: #868b8e;
+        h3 {
+          color: #696b6d;
           font-family: $fontFamily;
           text-transform: capitalize;
           padding: 25px;
@@ -109,63 +145,85 @@ body {
         display: flex;
         align-items: center;
         .blog__section--paragraph {
+          @include propFuente(17px, normal);
           width: 80%;
+          font-family: $fontFamily;
         }
       }
     }
   }
   /* Galería */
   .tituloGaleria {
-    margin-top: 100px;
+    margin-top: 90px;
     @extend .index__title;
     color: $colorDetails;
     text-align: center;
-    background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%)
-      #989898;
+    background: $backgroudGradient;
   }
   .carousel {
     .carousel-inner {
-      height: 90vh;
+      .carousel-item {
+        height: 90vh;
+        .img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      } 
+    }
+    .carousel__text {
+      background-color: rgba(90, 92, 94, 0.63);
+      font-size: 20px;
+      font-family: $fontFamily;
+      color: $colorDetails;
     }
   }
-  /* Tienda*/
 
-  .card-body {
+  /* Tienda*/
+  .card__container {
+    background-color: $backgroudGradient;
+  }
+  .cardProducto {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    .card-body {
     display: flex;
     flex-direction: column;
-  }
-  .card-title {
-    text-align: center;
-  }
+    }
+    .card-title {
+      text-align: center;
+    }
 
-  .btn__card {
-    background: $colorDetails;
-    width: 100%;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    padding: 5px;
-    border: 1px solid #ffffff66;
+    .btn__card {
+      background: $colorDetails;
+      width: 100%;
+      color: black;
+      text-decoration: none;
+      text-align: center;
+      padding: 5px;
+      border: 1px solid #ffffff66;
+    }
   }
 
   /* Formulario */
   form {
+    height: 90vh;
     margin-top: 80px;
-    .form__container {
-      height: 90vh;
-      #btn__form {
-        background-color: $colorDetails;
-        width: 100%;
-        margin-top: 5px;
-      }
+    background-color: $backgroudGradient;
+    #btn__form {
+      background-color: $colorDetails;
+      width: 100%;
+      margin-top: 5px;
     }
   }
 }
+
 /*footer*/
 
 .footer {
-  background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%)
-    #989898;
+  background: $backgroudGradient;
   padding: 10px;
   border: $colorDetails;
   border-style: solid;
@@ -187,24 +245,19 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .mainTienda {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2px;
-    row-gap: 10px;
-    margin: 10px 10px 10px 25px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 20px;
   }
+ 
 }
-@media only screen and (max-width: 576px) {
-  .mainTienda {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-    margin: 10px 10px 10px 25px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+@media (max-width: 576px) {
+  .contact-card {
+    padding: 20px;
+  }
+  form { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
