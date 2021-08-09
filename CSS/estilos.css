@@ -53,15 +53,14 @@ body {
       font-size: 3rem;
       font-family: "Rajdhani", sans-serif;
       color: #5d5e5f;
-      background-color: white;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-left: 46%; }
     body .banner .parrafoIndex {
       font-family: "Rajdhani", sans-serif;
-      font-size: 25px;
+      font-size: 1.5rem;
       color: #5d5e5f;
-      width: 60vw;
       text-align: center;
-      background-color: white; }
+      margin-left: 46%; }
   body .index__title, body .main-container .main-title, body .tituloGaleria {
     color: #5d5e5f;
     font-family: "Rajdhani", sans-serif;
@@ -160,7 +159,7 @@ body {
     font-family: "Rajdhani", sans-serif;
     color: #e7d2cc; }
   body .card__container {
-    background-color: radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898; }
+    background-color: #eee7e7; }
   body .cardProducto {
     display: flex;
     justify-content: space-around;
@@ -221,4 +220,21 @@ body {
     justify-content: center; }
   .paragraphContainer {
     display: flex;
-    justify-content: center; } }
+    justify-content: center; }
+  .banner {
+    margin-top: 90px; }
+    .banner h1 {
+      padding: 0px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #39393a; }
+    .banner .parrafoIndex {
+      background-color: white;
+      color: #5d5e5f;
+      text-align: center;
+      margin: 0;
+      width: 100%; }
+    .banner .cardIndex {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }

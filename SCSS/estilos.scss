@@ -60,16 +60,16 @@ body {
         font-size: 3rem;
         font-family: $fontFamily;
         color: $colorLetra;
-        background-color: white;
+        
         margin-bottom: 30px;
+        margin-left: 46%;
       }
       .parrafoIndex {
         font-family: $fontFamily;
-        font-size: 25px;
+        font-size: 1.5rem;
         color: $colorLetra;
-        width: 60vw;
         text-align: center;
-        background-color: white;
+        margin-left: 46%;
       }
     }
     .index__title {
@@ -204,7 +204,7 @@ body {
 
   /* Tienda*/
   .card__container {
-    background-color: $backgroudGradient;
+    background-color: #eee7e7;
   }
   .cardProducto {
     display: flex;
@@ -273,8 +273,10 @@ body {
   .contact-card {
     padding: 20px;
   }
- 
 }
+
+
+
 
 @media (max-width: 576px) {
   .contact-card {
@@ -288,5 +290,27 @@ body {
   .paragraphContainer {
     display: flex;
     justify-content: center;
+  }
+  .banner {
+    margin-top: 90px;
+    h1 {
+      padding: 0px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #39393a;
+    }
+    .parrafoIndex {
+      background-color: white;
+      color: #5d5e5f;
+      text-align: center;
+      margin: 0;
+      width: 100%;
+    }
+    .cardIndex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
   }
 }
