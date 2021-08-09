@@ -39,7 +39,8 @@ body {
       body .menu .navbar-collapse .nav-link:hover {
         color: white !important; }
   body .banner {
-    background-image: url(../Media/banner.png);
+    background-image: url(../Media/banner2.png);
+    background-size: cover;
     height: 50vh;
     width: 100%;
     display: flex;
@@ -86,9 +87,9 @@ body {
     background-color: #e7d2cc;
     margin-bottom: 20px; }
   body .index__card--container {
-    background-color: radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898; }
+    background-color: radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
+    display: flex; }
     body .index__card--container .cardIndex {
-      display: flex;
       justify-content: space-around;
       margin-top: 5px;
       margin-bottom: 5px; }
@@ -129,7 +130,7 @@ body {
     text-align: center;
     background: radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898; }
   body .carousel .carousel-inner .carousel-item {
-    height: 90vh; }
+    height: 80vh; }
     body .carousel .carousel-inner .carousel-item .img {
       height: 100%;
       width: 100%;
@@ -187,6 +188,7 @@ body {
   .footer ul li i:hover {
     color: white; }
 
+/*Media Queries*/
 @media (max-width: 768px) {
   .contact-card {
     padding: 20px; } }
@@ -197,4 +199,7 @@ body {
   form {
     display: flex;
     flex-direction: column;
+    justify-content: center; }
+  .paragraphContainer {
+    display: flex;
     justify-content: center; } }

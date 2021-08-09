@@ -45,7 +45,8 @@ body {
   }
   /* Index*/
     .banner {
-      background-image: url(../Media/banner.png);
+      background-image: url(../Media/banner2.png);
+      background-size: cover;
       height: 50vh;
       width: 100%;
       display: flex;
@@ -102,8 +103,9 @@ body {
   }
   .index__card--container {
     background-color: $backgroudGradient;
+    display: flex;
     .cardIndex {
-      display: flex;
+    
       justify-content: space-around;
       margin-top: 5px;
       margin-bottom: 5px;
@@ -163,7 +165,7 @@ body {
   .carousel {
     .carousel-inner {
       .carousel-item {
-        height: 90vh;
+        height: 80vh;
         .img {
           height: 100%;
           width: 100%;
@@ -245,12 +247,14 @@ body {
   }
 }
 
+/*Media Queries*/
 @media (max-width: 768px) {
   .contact-card {
     padding: 20px;
   }
  
 }
+
 @media (max-width: 576px) {
   .contact-card {
     padding: 20px;
@@ -258,6 +262,10 @@ body {
   form { 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+  }
+  .paragraphContainer {
+    display: flex;
     justify-content: center;
   }
 }
