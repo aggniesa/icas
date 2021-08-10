@@ -60,7 +60,6 @@ body {
         font-size: 3rem;
         font-family: $fontFamily;
         color: $colorLetra;
-        
         margin-bottom: 30px;
         margin-left: 46%;
       }
@@ -117,7 +116,6 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    padding-bottom: 50px;
     
     .row {
       width: 100%;
@@ -131,9 +129,14 @@ body {
     .cardIndex {
       justify-content: space-around;
       margin: 5px;
+      a {
+        text-decoration: none;
+        color: $colorLetra;
+      }
       .card-body {
       display: flex;
       flex-direction: column;
+      color: $colorLetra;
       }
       .card-title {
         text-align: center;
@@ -234,7 +237,6 @@ body {
   form {
     height: 90vh;
     margin-top: 80px;
-    background-color: $backgroudGradient;
     #btn__form {
       background-color: $colorDetails;
       width: 100%;
@@ -275,9 +277,6 @@ body {
   }
 }
 
-
-
-
 @media (max-width: 576px) {
   .contact-card {
     padding: 20px;
@@ -295,22 +294,21 @@ body {
     margin-top: 90px;
     h1 {
       padding: 0px;
-      font-size: 2rem;
+      font-size: 2rem !important;
       font-weight: bold;
-      color: #39393a;
+      color: #39393a !important;
+      margin-left: 0% !important;
     }
     .parrafoIndex {
       background-color: white;
       color: #5d5e5f;
       text-align: center;
-      margin: 0;
+      margin: 0 !important;
       width: 100%;
     }
-    .cardIndex {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
+  }
+  .cardIndex {
+    display: flex;
+    justify-content: center;
   }
 }

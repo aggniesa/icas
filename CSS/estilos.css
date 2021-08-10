@@ -99,8 +99,7 @@ body {
     background-color: #eee7e7;
     display: flex;
     width: 100%;
-    justify-content: space-around;
-    padding-bottom: 50px; }
+    justify-content: space-around; }
     body .index__card--container .row {
       width: 100%;
       display: flex;
@@ -111,9 +110,13 @@ body {
     body .index__card--container .cardIndex {
       justify-content: space-around;
       margin: 5px; }
+      body .index__card--container .cardIndex a {
+        text-decoration: none;
+        color: #5d5e5f; }
       body .index__card--container .cardIndex .card-body {
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        color: #5d5e5f; }
       body .index__card--container .cardIndex .card-title {
         text-align: center; }
   body .blog__main .blog__section {
@@ -180,8 +183,7 @@ body {
       border: 1px solid #ffffff66; }
   body form {
     height: 90vh;
-    margin-top: 80px;
-    background-color: radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898; }
+    margin-top: 80px; }
     body form #btn__form {
       background-color: #e7d2cc;
       width: 100%;
@@ -225,16 +227,16 @@ body {
     margin-top: 90px; }
     .banner h1 {
       padding: 0px;
-      font-size: 2rem;
+      font-size: 2rem !important;
       font-weight: bold;
-      color: #39393a; }
+      color: #39393a !important;
+      margin-left: 0% !important; }
     .banner .parrafoIndex {
       background-color: white;
       color: #5d5e5f;
       text-align: center;
-      margin: 0;
+      margin: 0 !important;
       width: 100%; }
-    .banner .cardIndex {
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
+  .cardIndex {
+    display: flex;
+    justify-content: center; } }
