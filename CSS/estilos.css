@@ -212,7 +212,10 @@ body {
 /*Media Queries*/
 @media (max-width: 768px) {
   .contact-card {
-    padding: 20px; } }
+    padding: 20px; }
+  .cardIndex {
+    display: flex;
+    justify-content: center; } }
 
 @media (max-width: 576px) {
   .contact-card {

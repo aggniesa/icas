@@ -276,6 +276,10 @@ body {
   .contact-card {
     padding: 20px;
   }
+  .cardIndex {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 576px) {
