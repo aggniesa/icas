@@ -82,6 +82,7 @@ body {
     background-color: #eee7e7;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin: 0px;
     .main-title {
       @extend .index__title;
       padding-left: 50px;
@@ -285,6 +286,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 0 !important;
   }
   .paragraphContainer {
     display: flex;
